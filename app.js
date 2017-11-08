@@ -1158,7 +1158,7 @@
                 components: [{
                     id: "transportLine",
                     idNum: 1,
-                    name: "Conveyor",
+                    name: "输送带",
                     width: 1,
                     height: 1,
                     spriteX: 0,
@@ -1253,7 +1253,7 @@
                 }, {
                     id: "ironBuyer",
                     idNum: 2,
-                    name: "Iron ore buyer",
+                    name: "铁矿石买家",
                     width: 2,
                     height: 2,
                     spriteX: 4,
@@ -1277,7 +1277,7 @@
                 }, {
                     id: "ironFoundry",
                     idNum: 3,
-                    name: "Iron foundry",
+                    name: "铸铁厂",
                     width: 4,
                     height: 2,
                     spriteX: 0,
@@ -1306,7 +1306,7 @@
                 }, {
                     id: "ironSeller",
                     idNum: 4,
-                    name: "Iron seller",
+                    name: "铁卖家",
                     width: 1,
                     height: 2,
                     spriteX: 6,
@@ -2744,7 +2744,7 @@
         var e = [{
             id: "level1",
             idNum: 1,
-            name: "Factory",
+            name: "工厂",
             tilesX: 68,
             tilesY: 38,
             startX: 8,
@@ -2939,7 +2939,7 @@
         }, {
             id: "level2",
             idNum: 2,
-            name: "Kilofactory",
+            name: "千级工厂",
             tilesX: 50,
             tilesY: 35,
             startX: 12,
@@ -3122,7 +3122,7 @@
         }, {
             id: "level5",
             idNum: 5,
-            name: "Terafactory",
+            name: "万亿级工厂",
             tilesX: 80,
             tilesY: 41,
             startX: 9,
@@ -3362,7 +3362,7 @@
         };
         return {
             layout: [{
-                name: "Conveyor",
+                name: "输送带",
                 iconX: 1,
                 iconY: 0,
                 items: ["packageSize"]
@@ -3420,7 +3420,7 @@
             }, {
                 type: "break"
             }, {
-                name: "Iron foundry",
+                name: "铸铁厂",
                 iconX: 3,
                 iconY: 0,
                 items: ["ironFoundryConvertAmount"]
@@ -3499,7 +3499,7 @@
             }, {
                 type: "break"
             }, {
-                name: "Iron seller",
+                name: "铁卖家",
                 iconX: 4,
                 iconY: 0,
                 items: ["ironSellerSellPrice", "_", "ironSellerSellAmount"]
@@ -4718,12 +4718,12 @@
         var e = [{
             id: "makingProfit",
             idNum: 1,
-            name: "Making profit!",
+            name: "赚取利润！",
             spriteX: 3,
             spriteY: 0,
             bonus: {
                 type: "custom",
-                description: "Unlocks research"
+                description: "解锁研究标签"
             },
             tests: [{
                 type: "avgMoneyIncome",
@@ -4732,12 +4732,12 @@
         }, {
             id: "collectingCash",
             idNum: 2,
-            name: "Collecting some cash",
+            name: "收集一些现金",
             spriteX: 2,
             spriteY: 0,
             bonus: {
                 type: "custom",
-                description: "Unlocks extras"
+                description: "解锁额外标签"
             },
             tests: [{
                 type: "amountOfMoney",
@@ -4746,12 +4746,12 @@
         }, {
             id: "gettingSmarter",
             idNum: 3,
-            name: "Getting smarter",
+            name: "变得更聪明",
             spriteX: 2,
             spriteY: 0,
             bonus: {
                 type: "custom",
-                description: "Unlocks upgrades"
+                description: "解锁升级标签"
             },
             tests: [{
                 type: "researched",
@@ -4878,7 +4878,7 @@
             components: [{
                 id: "transportLine",
                 idNum: 1,
-                name: "Conveyor",
+                name: "输送带",
                 width: 1,
                 height: 1,
                 spriteX: 0,
@@ -4898,7 +4898,7 @@
             }, {
                 id: "ironBuyer",
                 idNum: 2,
-                name: "Iron ore buyer",
+                name: "铁矿石买家",
                 width: 2,
                 height: 2,
                 spriteX: 4,
@@ -4922,7 +4922,7 @@
             }, {
                 id: "ironFoundry",
                 idNum: 3,
-                name: "Iron foundry",
+                name: "铸铁厂",
                 width: 4,
                 height: 2,
                 spriteX: 0,
@@ -5023,7 +5023,7 @@
             components: [{
                 id: "transportLine",
                 idNum: 1,
-                name: "Conveyor",
+                name: "输送带",
                 width: 1,
                 height: 1,
                 spriteX: 0,
@@ -5043,7 +5043,7 @@
             }, {
                 id: "ironBuyer",
                 idNum: 2,
-                name: "Iron ore buyer",
+                name: "铁矿石买家",
                 width: 2,
                 height: 2,
                 spriteX: 4,
@@ -5067,7 +5067,7 @@
             }, {
                 id: "ironFoundry",
                 idNum: 3,
-                name: "Iron foundry",
+                name: "铸铁厂",
                 width: 4,
                 height: 2,
                 spriteX: 0,
@@ -8630,7 +8630,7 @@
         };
         return t
     }), define("text!template/factories.html", [], function () {
-        return '<div class="headerXX">\r\n    你拥有 <span class="money">$<b id="money"></b></span> 可以消费，这是非常不错的。\r\n    平均总收入 <span class="money">$<b id="income"></b></span>.<br />\r\n    {{#if researchBought}}\r\n    你拥有 <span class="research"><b id="researchPoints"></b></span> 研究点。\r\n    平均生产 <span class="research"><b id="researchIncome"></b></span>\r\n    {{/if}}\r\n</div>\r\n<div class="helpXX">\r\n    <div style="float:right"><span id="ticks"></span> 点/秒</div>\r\n    购买更多的土地，创造更大的帝国。 来吧，买一些！\r\n</div>\r\n<div id="factorySelection" class="factories">\r\n    {{#each factories}}\r\n    <div class="factoryButton {{design}}" data-id="{{id}}">\r\n        <div class="name">\r\n            {{name}}\r\n        </div>\r\n        <span class="paused">{{#if isPaused}}&lt;&lt; Paused &gt;&gt;{{else}}&nbsp;{{/if}}</span>\r\n        {{#if isBought}}\r\n\r\n        <div class="productionTitle">Income</div>\r\n        <div class="textLine money" data-id="{{id}}" data-key="income">-</div>\r\n        <div class="productionTitle">Research</div>\r\n        <div class="textLine research" data-id="{{id}}" data-key="researchProduction">-</div>\r\n        <div class="button selectButton" data-id="{{id}}">选择</div>\r\n\r\n        {{else}}\r\n\r\n        <div class="productionTitle price">价格</div>\r\n        <div class="textLine money">${{price}}</div>\r\n        <div class="button buyButton" data-id="{{id}}">购买</div>\r\n\r\n        {{/if}}\r\n\r\n    </div>\r\n    {{/each}}\r\n    <div class="missionsButton" id="missionsButton">\r\n        <div class="name">\r\n            Challenges\r\n        </div>\r\n        <div class="description">\r\n            用这些自定义场景测试你的知识。 可能会造成脑损伤！\r\n        </div>\r\n        <div class="button">开始</div>\r\n    </div>\r\n</div>'
+        return '<div class="headerXX">\r\n    你拥有 <span class="money">$<b id="money"></b></span> 可以消费，这是非常不错的。\r\n    平均总收入 <span class="money">$<b id="income"></b></span>.<br />\r\n    {{#if researchBought}}\r\n    你拥有 <span class="research"><b id="researchPoints"></b></span> 研究点。\r\n    平均生产 <span class="research"><b id="researchIncome"></b></span>\r\n    {{/if}}\r\n</div>\r\n<div class="helpXX">\r\n    <div style="float:right"><span id="ticks"></span> 点/秒</div>\r\n    购买更多的土地，创造更大的帝国。 来吧，买一些！\r\n</div>\r\n<div id="factorySelection" class="factories">\r\n    {{#each factories}}\r\n    <div class="factoryButton {{design}}" data-id="{{id}}">\r\n        <div class="name">\r\n            {{name}}\r\n        </div>\r\n        <span class="paused">{{#if isPaused}}&lt;&lt; Paused &gt;&gt;{{else}}&nbsp;{{/if}}</span>\r\n        {{#if isBought}}\r\n\r\n        <div class="productionTitle">收入</div>\r\n        <div class="textLine money" data-id="{{id}}" data-key="income">-</div>\r\n        <div class="productionTitle">研究</div>\r\n        <div class="textLine research" data-id="{{id}}" data-key="researchProduction">-</div>\r\n        <div class="button selectButton" data-id="{{id}}">选择</div>\r\n\r\n        {{else}}\r\n\r\n        <div class="productionTitle price">价格</div>\r\n        <div class="textLine money">${{price}}</div>\r\n        <div class="button buyButton" data-id="{{id}}">购买</div>\r\n\r\n        {{/if}}\r\n\r\n    </div>\r\n    {{/each}}\r\n    <div class="missionsButton" id="missionsButton">\r\n        <div class="name">\r\n            Challenges\r\n        </div>\r\n        <div class="description">\r\n            用这些自定义场景测试你的知识。 可能会造成脑损伤！\r\n        </div>\r\n        <div class="button">开始</div>\r\n    </div>\r\n</div>'
     }), define("text!template/helper/alert.html", [], function () {
         return '<div class="alertBg" id="{{idBg}}"></div>\r\n<div class="alert" id="{{id}}">\r\n    <span class="title">{{title}}</span><br/>\r\n    <span class="message">{{{message}}}</span><br/>\r\n    <span class="button">{{buttonTitle}}</span>\r\n</div>'
     }), define("ui/helper/AlertUi", ["text!template/helper/alert.html"], function (e) {
@@ -8727,7 +8727,7 @@
     }), define("text!template/factory.html", [], function () {
         return '<table class="factoryBox" width="100%" cellspacing="0" cellpadding="0" border="0">\r\n    <tr>\r\n        <td class="overviewArea" valign="top">\r\n            <div class="overviewContainer"></div>\r\n        </td>\r\n        <td class="topArea" valign="top">\r\n            <div class="topContainer">\r\n                <div class="menuContainer"></div>\r\n                <div class="infoContainer"></div>\r\n                <div class="controlsContainer"></div>\r\n            </div>\r\n        </td>\r\n    </tr>\r\n    <tr>\r\n        <td class="componentsArea" valign="top">\r\n            <div class="componentsContainer"></div>\r\n            <div class="mapToolsContainer"></div>\r\n            <div class="incentivizedAd"></div>\r\n        </td>\r\n        <td class="mapArea" valign="top">\r\n            <div class="mapContainer"></div>\r\n        </td>\r\n    </tr>\r\n</table>\r\n'
     }), define("text!template/factory/menu.html", [], function () {
-        return '<div class="menuBox">\r\n    {{#if isMission}}\r\n    <a href="javascript:void(0);" id="missionsButton">Challenges</a>\r\n    <a href="javascript:void(0);" id="mainGameButton">Factories</a>\r\n    {{else}}\r\n    <a href="javascript:void(0);" id="factoriesButton">Factories</a>\r\n    {{/if}}\r\n    {{#if hasStatistics}}\r\n    <a href="javascript:void(0);" id="statisticsButton">Statistics</a>\r\n    {{/if}}\r\n    {{#if hasResearch}}\r\n    <a href="javascript:void(0);" id="researchButton">Research</a>\r\n    {{/if}}\r\n    {{#if hasUpgrades}}\r\n    <a href="javascript:void(0);" id="upgradesButton">Upgrades</a>\r\n    {{/if}}\r\n    {{#if hasAchievements}}\r\n    <a href="javascript:void(0);" id="achievementsButton">Achievements</a>\r\n    {{/if}}\r\n    <a href="javascript:void(0);" id="extraButton">Extra</a>\r\n    <a href="javascript:void(0);" id="timeTravelButton">Time travel</a>\r\n    <a href="javascript:void(0);" id="settingsButton">Settings</a>\r\n    <a href="javascript:void(0);" id="helpButton">Help</a>\r\n</div>'
+        return '<div class="menuBox">\r\n    {{#if isMission}}\r\n    <a href="javascript:void(0);" id="missionsButton">Challenges</a>\r\n    <a href="javascript:void(0);" id="mainGameButton">工厂</a>\r\n    {{else}}\r\n    <a href="javascript:void(0);" id="factoriesButton">工厂</a>\r\n    {{/if}}\r\n    {{#if hasStatistics}}\r\n    <a href="javascript:void(0);" id="statisticsButton">统计</a>\r\n    {{/if}}\r\n    {{#if hasResearch}}\r\n    <a href="javascript:void(0);" id="researchButton">研究</a>\r\n    {{/if}}\r\n    {{#if hasUpgrades}}\r\n    <a href="javascript:void(0);" id="upgradesButton">升级</a>\r\n    {{/if}}\r\n    {{#if hasAchievements}}\r\n    <a href="javascript:void(0);" id="achievementsButton">成就</a>\r\n    {{/if}}\r\n    <a href="javascript:void(0);" id="extraButton">额外</a>\r\n    <a href="javascript:void(0);" id="timeTravelButton">时间旅行</a>\r\n    <a href="javascript:void(0);" id="settingsButton">设置</a>\r\n    <a href="javascript:void(0);" id="helpButton">帮助</a>\r\n</div>'
     }), define("ui/factory/MenuUi", ["text!template/factory/menu.html"], function (e, t) {
         var n = "factoryMenuUi",
             r = function (e, t, n) {
@@ -9711,7 +9711,7 @@
     }), define("ui/helper/ConfirmUi", ["text!template/helper/confirm.html"], function (e) {
         var t = 0,
             n = function (e, n) {
-                this.title = e, this.message = n, this.okTitle = "Ok", this.cancelTitle = "Cancel", this.id = "confirm" + t++, this.idBg = this.id + "Bg"
+                this.title = e, this.message = n, this.okTitle = "确定", this.cancelTitle = "取消", this.id = "confirm" + t++, this.idBg = this.id + "Bg"
             };
         return n.prototype.setOkTitle = function (e) {
             return this.okTitle = e, this
@@ -9762,7 +9762,7 @@
                     var n = e.locations[t],
                         r = $('<div class="mapBuyArea" data-id="' + e.id + '"></div>').css("left", i.tileSize * n.x).css("top", i.tileSize * n.y).css("width", i.tileSize * n.width).css("height", i.tileSize * n.height),
                         s = "";
-                    t == 0 && (s = $('<div class="mapBuyAreaTitle money">' + e.name + "<br />Buy for <br /><b>" + "$" + nf(e.price) + "</b></div>").css("left", i.tileSize * n.x).css("top", i.tileSize * n.y).css("width", i.tileSize * n.width).css("marginTop", i.tileSize * n.height / 2 - 23)), i.area.append(r).append(s)
+                    t == 0 && (s = $('<div class="mapBuyAreaTitle money">' + e.name + "<br />购买 for <br /><b>" + "$" + nf(e.price) + "</b></div>").css("left", i.tileSize * n.x).css("top", i.tileSize * n.y).css("width", i.tileSize * n.width).css("marginTop", i.tileSize * n.height / 2 - 23)), i.area.append(r).append(s)
                 }
             });
             var s = null,
@@ -9922,7 +9922,7 @@
     }), define("text!template/factory/info.html", [], function () {
         return '<div class="componentControls">\r\n\r\n</div>\r\n<div class="componentInfo">\r\n\r\n</div>'
     }), define("text!template/factory/infoDetails.html", [], function () {
-        return '<div class="componentGraph"></div>\r\n\r\n<div class="componentInfoArea">\r\n    <span class="title">{{component.name}}</span><br/>\r\n    {{#if isMeta}}Price: <b class="money">{{component.priceStr}}</b> &nbsp;&nbsp; {{/if}}\r\n    {{#if component.runningCostStr}}Costs: <b class="money">{{component.runningCostStr}}</b>{{/if}}\r\n    {{#if component.effectivenessStr}}<span class="effectiveness">Efficiency: <b class="effectiveness">{{component.effectivenessStr}}</b></span>{{/if}}\r\n    <br/>\r\n\r\n    <div class="specialInfo">\r\n        {{#if component.description}}<span class="description">{{component.description}}</span>{{/if}}\r\n\r\n        {{#if component.isBuyer}}\r\n        Buys {{{component.buyStr}}} {{#if component.purchasePrice}}for <b class="money">${{component.purchasePrice}}</b>{{/if}} after\r\n        every <b>{{component.interval}}</b> ticks and sends it to conveyors.\r\n        Should have <b>{{component.noOfOutputs}}</b> out conveyor(s).<br/>\r\n        {{/if}}\r\n\r\n        {{#if component.isConverter}}\r\n        After every <b>{{component.interval}}</b> ticks uses {{{component.inputStr}}} to produce\r\n        {{{component.outputStr}}}.\r\n        Should have at least <b>{{component.noOfOutputs}}</b> out conveyor(s). <br/>\r\n        {{/if}}\r\n\r\n        {{#if component.isSeller}}\r\n        Sells {{{component.sellStr}}} for <b class="money">${{component.sellPrice}}</b> after every <b>{{component.interval}}</b> ticks\r\n        {{#if component.bonusStr}}<br/>Bonus: {{{component.bonusStr}}}{{/if}}<br/>\r\n        {{/if}}\r\n\r\n        {{#if component.isGarbage}}\r\n        After every <b>{{component.interval}}</b> ticks removes <b>{{component.removeAmount}}</b> items.<br/>\r\n        {{#if isLocation}}\r\n        Stock <b>{{component.noOfItems}}</b>/{{component.max}} items\r\n        {{/if}}\r\n        {{/if}}\r\n\r\n        {{#if component.isSorter}}\r\n        Takes in any element and sorts them to different outputs.\r\n        {{/if}}\r\n\r\n        {{#if component.isResearchCenter}}\r\n        Produces <span class="research">{{{component.productionStr}}}</span> after every <b>{{component.interval}}</b> ticks. <br/>\r\n        Production bonus of each {{{component.bonusStr}}}<br/>\r\n        {{/if}}\r\n\r\n        {{#if component.isLab}}\r\n        Produces <b>{{{component.outputStr}}}</b> after every <b>{{component.interval}}</b> ticks<br/>\r\n        Production bonus of each {{{component.bonusStr}}}<br/>\r\n        {{/if}}\r\n\r\n        {{#if component.isTransport}}\r\n        Transports items from one component to another. Can take in 1 item/tick.\r\n        {{/if}}\r\n\r\n        {{#if component.stock}}\r\n        <b>Stock</b> {{#each component.stock}}\r\n        <span class="{{resourceId}}">{{resourceName}}: </span><b class="{{resource}}">{{amount}}</b>/{{max}}\r\n        {{/each}}\r\n        {{/if}}\r\n\r\n    </div>\r\n</div>\r\n'
+        return '<div class="componentGraph"></div>\r\n\r\n<div class="componentInfoArea">\r\n    <span class="title">{{component.name}}</span><br/>\r\n    {{#if isMeta}}价格: <b class="money">{{component.priceStr}}</b> &nbsp;&nbsp; {{/if}}\r\n    {{#if component.runningCostStr}}花费: <b class="money">{{component.runningCostStr}}</b>{{/if}}\r\n    {{#if component.effectivenessStr}}<span class="effectiveness">效率: <b class="effectiveness">{{component.effectivenessStr}}</b></span>{{/if}}\r\n    <br/>\r\n\r\n    <div class="specialInfo">\r\n        {{#if component.description}}<span class="description">{{component.description}}</span>{{/if}}\r\n\r\n        {{#if component.isBuyer}}\r\n        购买 {{{component.buyStr}}} {{#if component.purchasePrice}}用 <b class="money">${{component.purchasePrice}}</b>{{/if}} after\r\n        每 <b>{{component.interval}}</b> 纳秒并将其发送到输送机。\r\n        Should have <b>{{component.noOfOutputs}}</b> out conveyor(s).<br/>\r\n        {{/if}}\r\n\r\n        {{#if component.isConverter}}\r\n        After every <b>{{component.interval}}</b> 纳秒用 {{{component.inputStr}}} 去生产\r\n        {{{component.outputStr}}}.\r\n        Should have at least <b>{{component.noOfOutputs}}</b> out conveyor(s). <br/>\r\n        {{/if}}\r\n\r\n        {{#if component.isSeller}}\r\n        Sells {{{component.sellStr}}} for <b class="money">${{component.sellPrice}}</b> after every <b>{{component.interval}}</b> 纳秒\r\n        {{#if component.bonusStr}}<br/>奖金: {{{component.bonusStr}}}{{/if}}<br/>\r\n        {{/if}}\r\n\r\n        {{#if component.isGarbage}}\r\n        After every <b>{{component.interval}}</b> 纳秒 removes <b>{{component.removeAmount}}</b> items.<br/>\r\n        {{#if isLocation}}\r\n        库存 <b>{{component.noOfItems}}</b>/{{component.max}} 项\r\n        {{/if}}\r\n        {{/if}}\r\n\r\n        {{#if component.isSorter}}\r\n        发生在任何元素，并将其分类到不同的输出。\r\n        {{/if}}\r\n\r\n        {{#if component.isResearchCenter}}\r\n        生产 <span class="research">{{{component.productionStr}}}</span> 每 <b>{{component.interval}}</b> 次. <br/>\r\n        Production bonus of each {{{component.bonusStr}}}<br/>\r\n        {{/if}}\r\n\r\n        {{#if component.isLab}}\r\n        Produces <b>{{{component.outputStr}}}</b> after every <b>{{component.interval}}</b> 纳秒<br/>\r\n        Production bonus of each {{{component.bonusStr}}}<br/>\r\n        {{/if}}\r\n\r\n        {{#if component.isTransport}}\r\n        运输机将项目从一个组件传输到另一个组件。 可以带1项/次。\r\n        {{/if}}\r\n\r\n        {{#if component.stock}}\r\n        <b>库存</b> {{#each component.stock}}\r\n        <span class="{{resourceId}}">{{resourceName}}: </span><b class="{{resource}}">{{amount}}</b>/{{max}}\r\n        {{/each}}\r\n        {{/if}}\r\n\r\n    </div>\r\n</div>\r\n'
     }), define("text!template/factory/component/sorter.html", [], function () {
         return '{{#each locations}}\r\n{{name}}\r\n<select data-id="{{id}}">\r\n    {{#each resources}}\r\n    <option value="{{id}}">{{name}}</option>\r\n    {{/each}}\r\n</select><br/>\r\n{{/each}}\r\n'
     }), define("game/action/UpdateSorterSortingResource", [], function () {
@@ -10231,7 +10231,7 @@
             this.factory.getEventManager().removeListenerForType(u), this.container.html(""), this.container = null
         }, a
     }), define("text!template/factory/controls.html", [], function () {
-        return '<div class="controlsBox">\r\n    <a href="javascript:void(0);" id="clearPackages" class="button clearPackagesButton">Clear tracks</a>\r\n    <a href="javascript:void(0);" id="resetFactory" class="button resetFactoryButton">Reset</a>\r\n    <br style="clear:both"/>\r\n    <a href="javascript:void(0);" class="button stopButton" id="stopButton">Pause</a>\r\n    <a href="javascript:void(0);" class="button playButton" id="playButton">Play</a>\r\n    <a href="javascript:void(0);" class="button playFastButton" id="playFastButton">Fast &gt;&gt;</a>\r\n    <a href="javascript:void(0);" class="button playNormalButton" id="playNormalButton">Normal</a>\r\n    <div id="bonusTicks" class="bonusTicks">Bonus ticks: <span></span></div>\r\n</div>\r\n\r\n\r\n'
+        return '<div class="controlsBox">\r\n    <a href="javascript:void(0);" id="clearPackages" class="button clearPackagesButton">清除轨道</a>\r\n    <a href="javascript:void(0);" id="resetFactory" class="button resetFactoryButton">重置</a>\r\n    <br style="clear:both"/>\r\n    <a href="javascript:void(0);" class="button stopButton" id="stopButton">暂停</a>\r\n    <a href="javascript:void(0);" class="button playButton" id="playButton">开始</a>\r\n    <a href="javascript:void(0);" class="button playFastButton" id="playFastButton">快速 &gt;&gt;</a>\r\n    <a href="javascript:void(0);" class="button playNormalButton" id="playNormalButton">正常</a>\r\n    <div id="bonusTicks" class="bonusTicks">奖励点: <span></span></div>\r\n</div>\r\n\r\n\r\n'
     }), define("game/action/ClearPackagesAction", [], function () {
         var e = function (e) {
             this.factory = e
@@ -10287,7 +10287,7 @@
                 var e = new t(this.factory);
                 e.canClear() && e.clear()
             }.bind(this)), this.resetFactoryButton.click(function () {
-                (new r("Are you sure?", "This will remove all components from the map")).setOkCallback(function () {
+                (new r("你确定吗?", "这将从地图上删除所有组件")).setOkCallback(function () {
                     var e = new n(this.factory);
                     e.canReset() && e.reset()
                 }.bind(this)).display()
@@ -10298,7 +10298,7 @@
             this.game.getEventManager().removeListenerForType(i), this.container.html(""), this.container = null
         }, s
     }), define("text!template/factory/mapTools.html", [], function () {
-        return '<div class="mapToolsBox">\r\n    <div class="location"></div>\r\n    <div class="title">Map tools</div>\r\n    <div class="help">Press ALT to draw</div>\r\n\r\n    <div class="button buttonSelected but" data-id="">Nothing</div>\r\n    {{#each tools}}\r\n    {{#if showBreak}}\r\n    <br style="clear:both"/>\r\n    {{/if}}\r\n    <div class="button but{{id}}" data-id="{{id}}">\r\n        <div class="mapTool {{id}}" data-id="{{id}}">{{name}}</div>\r\n    </div>\r\n    {{/each}}\r\n    <br style="clear:both"/>\r\n    <br/>\r\n\r\n    <div class="title">Map data</div>\r\n    <textArea id="mapData"></textArea><br/>\r\n</div>'
+        return '<div class="mapToolsBox">\r\n    <div class="location"></div>\r\n    <div class="title">地图工具</div>\r\n    <div class="help">按ALT键去画</div>\r\n\r\n    <div class="button buttonSelected but" data-id="">无</div>\r\n    {{#each tools}}\r\n    {{#if showBreak}}\r\n    <br style="clear:both"/>\r\n    {{/if}}\r\n    <div class="button but{{id}}" data-id="{{id}}">\r\n        <div class="mapTool {{id}}" data-id="{{id}}">{{name}}</div>\r\n    </div>\r\n    {{/each}}\r\n    <br style="clear:both"/>\r\n    <br/>\r\n\r\n    <div class="title">地图数据</div>\r\n    <textArea id="mapData"></textArea><br/>\r\n</div>'
     }), define("ui/factory/MapToolsUi", ["text!template/factory/mapTools.html"], function (e) {
         var t = "factoryMapToolsUi",
             n = function (e) {
@@ -10415,7 +10415,7 @@
             this.mapUi.destroy(), this.componentsUi.destroy(), this.infoUi.destroy(), this.controlsUi.destroy(), this.overviewUi.destroy(), this.mapToolsUi.destroy(), this.incentivizedAdButtonUi.destroy(), this.game.getEventManager().removeListenerForType(f), this.container.html(""), this.container = null, $(".main").removeClass("fullScreen")
         }, l
     }), define("text!template/research.html", [], function () {
-        return '<div class="researchBox">\r\n\r\n    <span class="backButton" id="backToReactor">Back to factory</span>\r\n\r\n    <div class="header">\r\n        You have <b id="researchPoints" class="research">????</b> research points and\r\n        <b class="money">$<span id="money"></span></b>. Use it wisely!\r\n        You have researched <b>{{have}} of {{max}}</b> technologies.<br/>\r\n        <span class="miniText">Research applies to every factory.</span>\r\n    </div>\r\n    <br/>\r\n    {{#each research}}\r\n    {{#if changeGroup}}\r\n    <br style="clear:left"/><br/>\r\n    {{/if}}\r\n    <div class="researchItem" data-id="{{id}}">\r\n\r\n        <div class="icon">\r\n            <div class="iconSelf" style="{{iconStyle}}"></div>\r\n        </div>\r\n        <div class="buyButton" data-id="{{id}}">BUY</div>\r\n\r\n        {{name}}\r\n        {{#if showBoughtAndMax}}\r\n        <span class="bought"></span>/{{max}}\r\n        {{/if}}\r\n        &nbsp;&nbsp;&nbsp;&nbsp;\r\n        {{#if price}}\r\n        <span class="priceTitle">Price:</span><span class="money">{{price}}</span>\r\n        {{/if}}\r\n        {{#if priceResearchPoints}}\r\n        <span class="priceTitle">Research:</span><span class="research">{{priceResearchPoints}}</span>\r\n        {{/if}}\r\n        <br/>\r\n\r\n        <div class="description">\r\n            {{description}}\r\n        </div>\r\n\r\n    </div>\r\n    {{/each}}\r\n\r\n</div>\r\n'
+        return '<div class="researchBox">\r\n\r\n    <span class="backButton" id="backToReactor">Back to factory</span>\r\n\r\n    <div class="header">\r\n        You have <b id="researchPoints" class="research">????</b> research points and\r\n        <b class="money">$<span id="money"></span></b>. Use it wisely!\r\n        You have researched <b>{{have}} of {{max}}</b> technologies.<br/>\r\n        <span class="miniText">Research applies to every factory.</span>\r\n    </div>\r\n    <br/>\r\n    {{#each research}}\r\n    {{#if changeGroup}}\r\n    <br style="clear:left"/><br/>\r\n    {{/if}}\r\n    <div class="researchItem" data-id="{{id}}">\r\n\r\n        <div class="icon">\r\n            <div class="iconSelf" style="{{iconStyle}}"></div>\r\n        </div>\r\n        <div class="buyButton" data-id="{{id}}"购买</div>\r\n\r\n        {{name}}\r\n        {{#if showBoughtAndMax}}\r\n        <span class="bought"></span>/{{max}}\r\n        {{/if}}\r\n        &nbsp;&nbsp;&nbsp;&nbsp;\r\n        {{#if price}}\r\n        <span class="priceTitle">Price:</span><span class="money">{{price}}</span>\r\n        {{/if}}\r\n        {{#if priceResearchPoints}}\r\n        <span class="priceTitle">Research:</span><span class="research">{{priceResearchPoints}}</span>\r\n        {{/if}}\r\n        <br/>\r\n\r\n        <div class="description">\r\n            {{description}}\r\n        </div>\r\n\r\n    </div>\r\n    {{/each}}\r\n\r\n</div>\r\n'
     }), define("game/action/BuyResearch", [], function () {
         var e = function (e, t) {
             this.game = e, this.researchId = t
@@ -10486,7 +10486,7 @@
             this.game.getEventManager().removeListenerForType(n), this.gameUiEm.removeListenerForType(n), this.container.html(""), this.container = null
         }, r
     }), define("text!template/upgrades.html", [], function () {
-        return '<div class="upgradesBox">\r\n\r\n    <span class="backButton" id="backToReactor">Back to factory</span>\r\n\r\n    <div class="header">\r\n        You have <b class="money">$<span id="money"></span></b> to spend. Make it count!<br/>\r\n        <span class="miniText">Upgrades apply only to this area.</span>\r\n    </div>\r\n    <br/>\r\n    {{#each groups}}\r\n    {{#if isBreak}}\r\n    <br style="clear:both"/>\r\n    {{else}}\r\n    <div class="upgradeGroup">\r\n        <div class="head">\r\n            <div class="buildingIcon">\r\n                <div class="buildingIconSelf" style="{{iconStyle}}"></div>\r\n            </div>\r\n            <div class="text">{{name}}</div>\r\n\r\n            {{#each upgrades}}\r\n            {{#if isSeparator}}\r\n            <div style="width:10px; height:10px; float:right;"></div>\r\n            {{else}}\r\n            <div class="upgradeItem upgradeItem_{{action}}" data-id="{{id}}" data-action="{{action}}">\r\n                <div class="upgradeIcon" style="{{iconStyle}}"></div>\r\n\r\n\r\n                <div class="upgradePopup smallText">\r\n\r\n\r\n                    <b>{{title}}</b> {{#if isSell}}(<u>sell</u>){{/if}}<br/>\r\n                    <span>Bought: </span><b class="bought green"></b>{{#if max}}<b class="red">/{{max}}</b>{{/if}}<br/>\r\n\r\n                    {{#if isBuy}}\r\n                    {{#if isMaxed}}\r\n                    <b class="red">Maxed!</b><br/>\r\n                    {{else}}\r\n                    <span class="priceTitle">Buy for:</span><b class="money">${{buyPrice}}</b><br/>\r\n                    {{/if}}\r\n                    <br/>\r\n                    {{{description}}}\r\n                    {{/if}}\r\n\r\n                    {{#if isSell}}\r\n                    {{#if canSell}}\r\n                    <span class="priceTitle">Sell for:</span><b class="money">${{sellPrice}}</b> <span class="miniText">(refunds {{refund}})</span><br/>\r\n                    {{else}}\r\n                    <b class="red">You haven\'t bought any, can\'t sell</b><br/>\r\n                    {{/if}}\r\n                    {{/if}}\r\n\r\n                </div>\r\n            </div>\r\n            {{/if}}\r\n            {{/each}}\r\n\r\n        </div>\r\n\r\n    </div>\r\n    {{/if}}\r\n    {{/each}}\r\n\r\n</div>'
+        return '<div class="upgradesBox">\r\n\r\n    <span class="backButton" id="backToReactor">Back to factory</span>\r\n\r\n    <div class="header">\r\n        You have <b class="money">$<span id="money"></span></b> to spend. Make it count!<br/>\r\n        <span class="miniText">Upgrades apply only to this area.</span>\r\n    </div>\r\n    <br/>\r\n    {{#each groups}}\r\n    {{#if isBreak}}\r\n    <br style="clear:both"/>\r\n    {{else}}\r\n    <div class="upgradeGroup">\r\n        <div class="head">\r\n            <div class="buildingIcon">\r\n                <div class="buildingIconSelf" style="{{iconStyle}}"></div>\r\n            </div>\r\n            <div class="text">{{name}}</div>\r\n\r\n            {{#each upgrades}}\r\n            {{#if isSeparator}}\r\n            <div style="width:10px; height:10px; float:right;"></div>\r\n            {{else}}\r\n            <div class="upgradeItem upgradeItem_{{action}}" data-id="{{id}}" data-action="{{action}}">\r\n                <div class="upgradeIcon" style="{{iconStyle}}"></div>\r\n\r\n\r\n                <div class="upgradePopup smallText">\r\n\r\n\r\n                    <b>{{title}}</b> {{#if isSell}}(<u>sell</u>){{/if}}<br/>\r\n                    <span>Bought: </span><b class="bought green"></b>{{#if max}}<b class="red">/{{max}}</b>{{/if}}<br/>\r\n\r\n                    {{#if isBuy}}\r\n                    {{#if isMaxed}}\r\n                    <b class="red">Maxed!</b><br/>\r\n                    {{else}}\r\n                    <span class="priceTitle"购买:</span><b class="money">${{buyPrice}}</b><br/>\r\n                    {{/if}}\r\n                    <br/>\r\n                    {{{description}}}\r\n                    {{/if}}\r\n\r\n                    {{#if isSell}}\r\n                    {{#if canSell}}\r\n                    <span class="priceTitle">Sell for:</span><b class="money">${{sellPrice}}</b> <span class="miniText">(refunds {{refund}})</span><br/>\r\n                    {{else}}\r\n                    <b class="red">You haven\'t bought any, can\'t sell</b><br/>\r\n                    {{/if}}\r\n                    {{/if}}\r\n\r\n                </div>\r\n            </div>\r\n            {{/if}}\r\n            {{/each}}\r\n\r\n        </div>\r\n\r\n    </div>\r\n    {{/if}}\r\n    {{/each}}\r\n\r\n</div>'
     }), define("game/action/BuyUpgrade", [], function () {
         var e = function (e, t) {
             this.factory = e, this.game = e.getGame(), this.upgradeId = t
@@ -10861,7 +10861,7 @@
             this.hide(), this.gameUiEm.removeListenerForType(n)
         }, r
     }), define("text!template/settings.html", [], function () {
-        return '<div id="settingsBg"></div>\r\n<div id="settings">\r\n    <a href="javascript:void(0);" class="closeButton" style="float:right; display:block;">关闭</a>\r\n\r\n    <b class="title">User key</b><br/>\r\n    这是您唯一的用户密钥。 保持安全并备份！<br/>\r\n    如果这个密钥丢失，没有办法恢复你的游戏！<br/>\r\n    <input type="text" class="userHash" id="userHash" value="{{userHash}}" name="userHash" readonly="readonly"/>\r\n    <a href="javascript:void(0)" id="copyToClipboardButton">Click here to copy to clipboard</a> or select user id and\r\n    press CTRL+C (windows) or CMD+C (mac) to copy it.\r\n    <br/>\r\n    <br/>\r\n    <b class="title">Save </b><br/>\r\n    Use manual save if you want to experiment and might need to get your game back to earlier state. Game\r\n    <b>auto saves</b> to your computer every {{localSaveInterval}} and to cloud every {{cloudSaveInterval}}.<br/>\r\n    {{#each saveSlots}}\r\n    <div class="saveSlot">\r\n        <b>{{name}}</b><br/>\r\n        <input type="button" class="saveToSlot" data-id="{{id}}" value="Save"/><br/>\r\n        <br/>\r\n        {{#if hasSave}}\r\n        {{lastSave}}<br/>\r\n        Ticks: <b>{{ticks}}</b><br/>\r\n        <input type="button" class="loadSlot" data-id="{{id}}" value="Load"/>\r\n        {{else}}\r\n        No save exists on <br/> this slot yet\r\n        <br/>\r\n        {{/if}}\r\n    </div>\r\n    {{/each}}\r\n    <br style="clear:both"/>\r\n    {{#if devMode}}\r\n    <b class="title">Load from data</b><br/>\r\n    <input type="text" id="loadData"/><input type="button" id="loadDataButton" value="Load data">\r\n    <br style="clear:both"/>\r\n    {{/if}}\r\n    <br/>\r\n    <b class="title">Switch user key</b><br/>\r\n    If you have existing user key, copy it here and click update. <br/>\r\n    This will reload the page with new account. <br/>\r\n    <br/>\r\n    <input type="text" class="updateUserHash" id="updateUserHash" value="" name="updateUserHash"/>\r\n    <input type="button" name="updateUserHashButton" id="updateUserHashButton" value="Update"/>\r\n    <br/>\r\n    <br/>\r\n    <b class="title">Reset </b><br/>\r\n    <b class="red">Resets the game</b> You have been warned! <br/>\r\n    Notice that:<br/>\r\n    * Manual saves will not be deleted and can be used to restore the game <br/>\r\n    * If you have made purchases, you keep unlocks like faster ticks, but lose consumed items like bonus ticks <br/>\r\n    <br/>\r\n    <input type="button" name="resetGame" id="resetGame" value="Reset whole game - you lose all progress!"/>\r\n\r\n    <div style="float:right">Version 1.07</div>\r\n    <br/>\r\n</div>'
+        return '<div id="settingsBg"></div>\r\n<div id="settings">\r\n    <a href="javascript:void(0);" class="closeButton" style="float:right; display:block;">关闭</a>\r\n\r\n    <b class="title">秘钥</b><br/>\r\n    这是您唯一的用户密钥。 保持安全并备份！<br/>\r\n    如果这个密钥丢失，没有办法恢复你的游戏！<br/>\r\n    <input type="text" class="userHash" id="userHash" value="{{userHash}}" name="userHash" readonly="readonly"/>\r\n    <a href="javascript:void(0)" id="copyToClipboardButton">点击这里复制到粘贴板</a> 或者全选秘钥\r\n    按下 CTRL+C (windows) or Command+C (mac) 去复制它。\r\n    <br/>\r\n    <br/>\r\n    <b class="title">保存 </b><br/>\r\n    使用手动保存，如果你想，因为你可能需要让你的游戏恢复到以前的状态。 游戏会\r\n    <b>自动保存</b> 在你的电脑上 {{localSaveInterval}} 并且保存到云存储 {{cloudSaveInterval}}.<br/>\r\n    {{#each saveSlots}}\r\n    <div class="saveSlot">\r\n        <b>{{name}}</b><br/>\r\n        <input type="button" class="saveToSlot" data-id="{{id}}" value="Save"/><br/>\r\n        <br/>\r\n        {{#if hasSave}}\r\n        {{lastSave}}<br/>\r\n        Ticks: <b>{{ticks}}</b><br/>\r\n        <input type="button" class="loadSlot" data-id="{{id}}" value="Load"/>\r\n        {{else}}\r\n        No save exists on <br/> this slot yet\r\n        <br/>\r\n        {{/if}}\r\n    </div>\r\n    {{/each}}\r\n    <br style="clear:both"/>\r\n    {{#if devMode}}\r\n    <b class="title">Load from data</b><br/>\r\n    <input type="text" id="loadData"/><input type="button" id="loadDataButton" value="Load data">\r\n    <br style="clear:both"/>\r\n    {{/if}}\r\n    <br/>\r\n    <b class="title">切换用户密钥</b><br/>\r\n    If you have existing user key, copy it here and click update. <br/>\r\n    这将使用新帐户重新加载页面。 <br/>\r\n    <br/>\r\n    <input type="text" class="updateUserHash" id="updateUserHash" value="" name="updateUserHash"/>\r\n    <input type="button" name="updateUserHashButton" id="updateUserHashButton" value="更新"/>\r\n    <br/>\r\n    <br/>\r\n    <b class="title">重置 </b><br/>\r\n    <b class="red">重置游戏</b> 你已经被警告！ <br/>\r\n    注意:<br/>\r\n    * 手动保存不会被删除，可用于恢复游戏 <br/>\r\n    * 如果你进行了购买，你会保持解锁状态，比如更快的点数，但是会失去奖励点等消耗项目 <br/>\r\n    <br/>\r\n    <input type="button" name="resetGame" id="resetGame" value="重置整个游戏 - 你将失去所有的进度！"/>\r\n\r\n    <div style="float:right">Version 1.07</div>\r\n    <br/>\r\n</div>'
     }), define("text!template/helper/loading.html", [], function () {
         return '<div class="loadingBg" id="{{idBg}}"></div>\r\n<div class="loading" id="{{id}}">\r\n    <center>\r\n    <img src="img/loader.gif" class="icon"/><br />\r\n    <span class="message">{{{title}}}</span>\r\n    </center>\r\n</div>'
     }), define("ui/helper/LoadingUi", ["text!template/helper/loading.html"], function (e) {
@@ -10921,8 +10921,8 @@
             }
             $("body").append(Handlebars.compile(e)({
                 userHash: this.userHash.toString(),
-                cloudSaveInterval: Math.ceil(this.saveManager.getCloudSaveInterval() / 6e4) + " minutes",
-                localSaveInterval: Math.ceil(this.saveManager.getLocalSaveInterval() / 1e3) + " seconds",
+                cloudSaveInterval: Math.ceil(this.saveManager.getCloudSaveInterval() / 6e4) + " 反正",
+                localSaveInterval: Math.ceil(this.saveManager.getLocalSaveInterval() / 1e3) + " 秒",
                 saveSlots: r,
                 devMode: this.play.isDevMode()
             }));
@@ -11082,7 +11082,7 @@
             this.globalUiEm.removeListenerForType(t), this.container && this.container.html(""), this.container = null
         }, n
     }), define("text!template/runningInBackgroundInfoUi.html", [], function () {
-        return '<div class="runningInBackgroundInfoUiBg" id="runningInBackgroundInfoUi"></div>\r\n<div class="runningInBackgroundInfoUi">\r\n    <b>后台模式激活</b><br/>\r\n    <br/>\r\n    Don\'t worry, game runs at <b class="green">normal speed</b>, just uses a lot less CPU (power) thanks to not updating some graphical\r\n    elements.<br/>\r\n    <br/>\r\n    <span class="green">Just focus (click) the game to deactivate</span>\r\n</div>'
+        return '<div class="runningInBackgroundInfoUiBg" id="runningInBackgroundInfoUi"></div>\r\n<div class="runningInBackgroundInfoUi">\r\n    <b>后台模式激活</b><br/>\r\n    <br/>\r\n    别担心，游戏在以 <b class="green">正常速度</b>运行, 只是因为没有更新一些图形元素，从而使用了很少的CPU（电源）\r\n 。<br/>\r\n    <br/>\r\n    <span class="green">只需（点击）游戏即可停用后台运行模式</span>\r\n</div>'
     }), define("ui/RunningInBackgroundInfoUi", ["text!template/runningInBackgroundInfoUi.html"], function (e) {
         var t = "RunningInBackgroundInfoUi",
             n = 15e3,
@@ -11117,7 +11117,7 @@
             s.prepend('<br style="clear:both"/>'), s.prepend(i), s.prepend(n), s.append(r), $("#main").addClass("mainWithAdd"), (adsbygoogle = window.adsbygoogle || []).push({}), (adsbygoogle = window.adsbygoogle || []).push({}), (adsbygoogle = window.adsbygoogle || []).push({})
         }
     }), define("text!template/intro.html", [], function () {
-        return '<div id="introBg"></div>\r\n<div id="intro">\r\n\r\n    <b class="title">放置工厂</b><br/>\r\n    <br/>\r\n    Welcome to the crazy world of <b style="color:greenyellow">factory idle</b>!\r\n    Your goal here is to build an <b style="color:greenyellow">automated factory</b> with many <b style="color:greenyellow">production chains</b>.\r\n    You start with simple stuff and later produce <b style="color:rgb(150,181,134)">high quality military technology</b>, like tanks and rockets! Seriously, high quality!<br/>\r\n    <br/>\r\n    Path to complicated products is <u style="color:red">not an easy one</u> though, so be warned! There will be great challenges ahead waiting for you!\r\n    Check <b style="color:yellow">help section</b> for good ideas.<br/>\r\n    <br/>\r\n    <b>Disclaimer</b>: This game is <b style="color:red; text-decoration:underline">harder than an average</b> 放置游戏，并需要打开一个 <u style="color:orange">脑洞</u>。 如果你有多个，把它们都打开！ 高能预警！<br/>\r\n    <br/>\r\n    <a href="javascript:void(0);" class="closeButton" style="color:white; font-weight:bold; float:right; display:block">Ok, got it and I will not sue anyone!</a>\r\n    <br style="clear:both;"/>\r\n    <span style="color:darkgray; font-size:0.9em">(except factory workers, always sue them for messing up your conveyors!)</span>\r\n\r\n</div>'
+        return '<div id="introBg"></div>\r\n<div id="intro">\r\n\r\n    <b class="title">放置工厂</b><br/>\r\n    <br/>\r\n    欢迎来到这个疯狂的世界 <b style="color:greenyellow">放置工厂</b>!\r\n    你的目标是建立一个 <b style="color:greenyellow">自动化工厂</b> 通过许多 <b style="color:greenyellow">生产链</b>.\r\n    你从简单的东西开始，然后生产 <b style="color:rgb(150,181,134)">高品质的军事技术</b>, 像坦克和火箭！ 重要的是，高品质！<br/>\r\n    <br/>\r\n    当然，制造复杂产品的道路是<u style="color:red">不容易的</u> ，所以要提醒你一下！ 未来会有很大的挑战等着你！\r\n    查看 <b style="color:yellow">帮助</b> 获取一些好的建议<br/>\r\n    <br/>\r\n    <b>声明</b>: 这个游戏<b style="color:red; text-decoration:underline">比平均水平更难</b> 放置游戏，并需要打开一个 <u style="color:orange">脑洞</u>。 如果你有多个，把它们都打开！ 高能预警！<br/>\r\n    <br/>\r\n    <a href="javascript:void(0);" class="closeButton" style="color:white; font-weight:bold; float:right; display:block">好了，现在开始吧，我不会告诉别人的。</a>\r\n    <br style="clear:both;"/>\r\n    <span style="color:darkgray; font-size:0.9em">(除了工厂工人，总是起诉他们搞乱你的传送带！)</span>\r\n\r\n</div>'
     }), define("ui/IntroUi", ["text!template/intro.html"], function (e) {
         var t = "intro",
             n = function () {
