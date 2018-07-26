@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>放置工厂</title>
+    <title>工厂放置</title>
 
     <meta charset="utf-8"/>
     <meta name="format-detection" content="telephone=no"/>
@@ -11,7 +11,7 @@
 
 <!--    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
 
-    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="shortcut icon" href="favicon.png"/>
 
 </head>
 <body>
@@ -32,7 +32,7 @@
             var oldErrorHandler = window.onerror;
             window.onerror = function (msg, url, lineNo, columnNo, error) {
                 GAME_LOADED = true;
-                document.getElementById("loadingMessage").innerHTML = "<b class='red'>Error loading the game.</b><br /> Please try again and if still happens, send this to developer: <br />" +
+                document.getElementById("loadingMessage").innerHTML = "<b class='red'>加载游戏出错</b><br /> 请尝试刷新，如果问题依然存在，请联系开发者: <br />" +
                 "<br />" +
                 "<textarea style='width:470px; height:65px; color:white; background-color:black;'>" +
                 "" + msg + "\n" +
@@ -43,12 +43,12 @@
 
             setTimeout(function () {
                 if (!GAME_LOADED) {
-                    document.getElementById("loadingMessage").innerHTML = "This is taking way longer than it should. <br /> " +
-                    "Check: <br /> " +
-                    "* Try to refresh. <br /> " +
-                    "* Internet connection and it's speed. <br /> " +
-                    "* Make sure you don't have ancient brower.<br />" +
-                    "* Check developer console to see errors and report these to developer.";
+                    document.getElementById("loadingMessage").innerHTML = "游戏加载的时间似乎比正常情况要长 <br /> " +
+                    "请尝试: <br /> " +
+                    "* 刷新页面。 <br /> " +
+                    "* 检查互联网连接和速度。 <br /> " +
+                    "* 确保你没有使用古老的浏览器。<br />" +
+                    "* 检查开发人员控制台以查看是否存在错误并向开发人员报告。";
                 }
             }, 30000);
 
